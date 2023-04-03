@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maendeleo</title>
+    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Maendeleo Banking</h1>
+      <h1 id="acc-balance">Balance:</h1>
+    </div>
+    <div class="inputBox">
+      <input
+        type="number"
+        id="input_box"
+        min="0"
+        required
+        placeholder="Enter Amount"
+      />
+    </div>
+    <div class="buttons">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        onclick="handleDeposit()"
+      >
+        Deposit
+      </button>
+      <button id="withdrawBtn" type="button" class="btn btn-danger btn-lg">
+        Withdraw
+      </button>
+    </div>
+    <div class="table_section">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Transaction Type</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Transaction Code</th>
+          </tr>
+        </thead>
+        <tbody id="table_data">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>12-May-2023</td>
+            <td>2000</td>
+            <td>Withdraw</td>
+            <td>200000</td>
+            <td>transactioncode</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
