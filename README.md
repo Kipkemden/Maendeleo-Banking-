@@ -1,6 +1,6 @@
 # Banking Interface.
 
-# MVP(Minimum Viable Prodocut)
+# MVP(Minimum Viable Product)
 
 -- Banking History
 -- Depost Money
